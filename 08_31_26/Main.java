@@ -9,12 +9,14 @@ public class Main {
     //     System.out.println("Program completed successfully");
     // }
 
-    int a = 2;
-    int b = 5;
-    int c = 6;
-    System.out.println(a+b+c);
+    // int a = 2;
+    // int b = 5;
+    // int c = 6;
+    // System.out.println(a+b+c);
 
     Foo newObj = new Foo();
-    System.out.println(newObj.data[0]);
+    System.out.println(newObj.getSize());
+    newObj.setSize(10);
+    System.out.println(newObj.getSize());
   }
 }
