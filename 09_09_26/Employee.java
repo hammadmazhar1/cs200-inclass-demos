@@ -1,3 +1,4 @@
+// base class Employee, contained in Employee.java
 public class Employee {
 
     // all attributes are private
@@ -7,6 +8,7 @@ public class Employee {
     private int hireDay;
     private int salary;
 
+    // default constructor
     public Employee(){
         name ="";
         hireYear = 2026;
@@ -16,6 +18,7 @@ public class Employee {
     
     }
 
+    // parametric constructor
     public Employee(String name, int year, int month, int day, int salary){
         this.name = name;
         this.hireYear = year;
@@ -24,14 +27,13 @@ public class Employee {
         this.salary = salary;
     }
 
+    //Setter/getter methods for private attributes
     public void setName(String name){
         this.name = name;
     }
-
     public String getName(){
         return name;
     }
-
     public void setHireYear(int year){
         hireYear = year;
     }

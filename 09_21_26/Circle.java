@@ -13,7 +13,10 @@ public class Circle extends Shape {
         pos[0] = 5;
         pos[1] = 5;
         Circle circle = new Circle(pos,2.5);
-        System.out.printf("%.2f",circle.computeArea());
+
+        Shape shape = new Rectangle(pos,10,5);
+
+        System.out.printf("%.2f",shape.computeArea());
 
     }
 }
