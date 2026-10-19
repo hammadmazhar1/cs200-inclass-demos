@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Collections;
 public class Main{
     public static <Etype> int findElementIdx(Etype[] arr, Etype element){
         for (int i =0; i < arr.length;i++){
@@ -48,12 +50,19 @@ public class Main{
         
         // System.out.println(computeDistance(0,0,2.4,3.8));
 
-        Pair<Integer> intPair = new Pair<Integer>(2,4);
-        Pair<String> strPair = new Pair<String>("A","B");
+        // 
+        ArrayList<Integer> intList = new ArrayList<Integer>();
+        intList.add(5);
+        intList.add(12);
+        intList.add(3);
+        System.out.println(intList.toString());
+        Collections.sort(intList);
+        System.out.println(intList.toString());
         
-        // System.out.println(intPair.value1);
-        // System.out.println(strPair.value2);
-        intPair.print();
-        strPair.print();
+        ArrayList<Pair<Integer>> pairList = new ArrayList<Pair<Integer>>();
+        pairList.add(new Pair<Integer>(4,2));
+        pairList.add(new Pair<Integer>(2,7));
+        Collections.sort(pairList);
+
     }
 }
